@@ -10,3 +10,6 @@ Parte do Ian:
 -Mostrar o uso do programa em tempo real
 -Apresentra outras features do programa
 
+O termo baseline pode ser caracterizado como a linha base para o acompanhamento de qualquer tipo de projeto. Além de acompanhá-lo,
+a referida linha pode ser utilizada para reproduzir e rastrear todas as etapas e todos os acontecimentos delineados dentro do projeto. 
+No caso do gitkraken, ele utiliza uma baseline de escopo, mapeando tudo que se produziu e ira ser produzido, seperando tais etapas em suas devidas versões.
