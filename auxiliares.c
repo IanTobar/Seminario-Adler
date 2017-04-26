@@ -54,7 +54,22 @@ int calculaTempoMili(struct timeval inicio, struct timeval final) {//faz o calcu
 }
 
 
+void escreveArquivoTXT(int *vet, int tamVet) {
+    int i;
+    FILE *saida;
+    saida = fopen("ordenado50000.txt", "w");
+    for (i = 0; i < tamVet; i++) {
+        fprintf(saida, "%d\n", vet[i]);
+    }
+}
 
+void geraAleatorios(int *vet, int tamVet) {
+    int i;
+    srand(time(NULL));
+    for (i = 0; i < tamVet; i++)
+        vet[i] = (rand() % 200000);
+
+}
 
 
 
