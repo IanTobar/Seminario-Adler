@@ -8,6 +8,9 @@ int main(int argc, char* argv[]) {
     int i, tamVet, *vet, j = 0, op;
     struct timeval inicio, final;
     unsigned long long int *tempo, *comparacao, *troca;
+    
+    printf("Digite o tamanho do vetor que sera utilizado na ordenacao:\n");
+    scanf("%d",&tamVet);
     printf("\ncmdline args count= %d", argc);
     /* First argument is executable name only */
     printf("\nexe name=%s", argv[0]);
@@ -18,14 +21,13 @@ int main(int argc, char* argv[]) {
     }
     
     printf("\n");
-    //O comando atoi converte uma string em um valor int
-    tamVet = atoi(argv[2]);
-    //Alocação de vetor de 5 espaços de inteiros
+    //Alocaï¿½ï¿½o de vetor de 5 espaï¿½os de inteiros
     tempo = (int*) malloc(5 * sizeof (int));
     
+    
     //Checa se o vetor foi alocado adequadamente, caso retorne null
-    //o usuário será avisado que a memoria é insuficiente para a alocação
-    //e fechará o programa
+    //o usuï¿½rio serï¿½ avisado que a memoria ï¿½ insuficiente para a alocaï¿½ï¿½o
+    //e fecharï¿½ o programa
     if (tempo == NULL) {
         printf("Memoria Insuficiente para alocar vetor de tempo\n");
         return 1;
@@ -47,14 +49,14 @@ int main(int argc, char* argv[]) {
     }
     //O comando atoi converte uma string em um valor int
     op = atoi(argv[1]);
-    //Se op é 1 ele ira utilizar o metodo de ordenação selection sempre pegando 
-    //seu tempo de execução que serão usados para gerar relatorio
+    //Se op ï¿½ 1 ele ira utilizar o metodo de ordenaï¿½ï¿½o selection sempre pegando 
+    //seu tempo de execuï¿½ï¿½o que serï¿½o usados para gerar relatorio
     if (op == 1) {
         for (i = 3; i < 8; i++) {
             vet = leArquivo(argv[i], tamVet);
-            gettimeofday(&inicio, NULL);//Pega o tempo inicial de execução
+            gettimeofday(&inicio, NULL);//Pega o tempo inicial de execuï¿½ï¿½o
             selection(vet, tamVet);
-            gettimeofday(&final, NULL);//Pega o tempo final de execução
+            gettimeofday(&final, NULL);//Pega o tempo final de execuï¿½ï¿½o
             tempo[i - 3] = calculaTempoMili(inicio, final);
             if (i - 3 == 0) {
                 troca[i - 3] = contaTrocas() - 1;
@@ -68,8 +70,8 @@ int main(int argc, char* argv[]) {
         }
 
     } else {
-        //Se op é 2 ele ira utilizar o metodo de ordenação rapidSort sempre pegando 
-        //seu tempo de execução que serão usados para gerar relatorio
+        //Se op ï¿½ 2 ele ira utilizar o metodo de ordenaï¿½ï¿½o rapidSort sempre pegando 
+        //seu tempo de execuï¿½ï¿½o que serï¿½o usados para gerar relatorio
         if (op == 2) {
             for (i = 3; i < 8; i++) {
                 vet = leArquivo(argv[i], tamVet);
