@@ -8,17 +8,11 @@ int main(int argc, char* argv[]) {
     int i, tamVet, *vet, j = 0, op;
     struct timeval inicio, final;
     unsigned long long int *tempo, *comparacao, *troca;
-    printf("\ncmdline args count= %d", argc);
-    /* First argument is executable name only */
-    printf("\nexe name=%s", argv[0]);
-
-    for (i = 1; i < argc; i++) {
-        printf("\narg%d=%s", i, argv[i]);
-    }
-
-    printf("\n");
-    tamVet = atoi(argv[2]);
+    
+    printf("Digite o tamanho do vetor que sera utilizado na ordenacao:\n");
+    scanf("%d",&tamVet);
     tempo = (int*) malloc(5 * sizeof (int));
+    
     if (tempo == NULL) {
         printf("Memoria Insuficiente para alocar vetor de tempo\n");
         return 1;
