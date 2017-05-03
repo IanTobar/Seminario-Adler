@@ -13,3 +13,6 @@ Parte do Ian:
 O termo baseline pode ser caracterizado como a linha base para o acompanhamento de qualquer tipo de projeto. Além de acompanhá-lo,
 a referida linha pode ser utilizada para reproduzir e rastrear todas as etapas e todos os acontecimentos delineados dentro do projeto. 
 No caso do gitkraken, ele utiliza uma baseline de escopo, mapeando tudo que se produziu e ira ser produzido, seperando tais etapas em suas devidas versões.
+
+O termo trunk se refere ao branch principal do seu repositorio, que no caso seria o nosso branch master, podemos chamar ele de master ou trunk (ou tronco, do ingles) 
+pois ele se trata da base de todo o repositorio, onde a versão ja lançada está. 
