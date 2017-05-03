@@ -10,6 +10,8 @@ Parte do Ian:
 -Mostrar o uso do programa em tempo real
 -Apresentra outras features do programa
 
+testes
+
 Criação de repositorios:
 	Existem dois tipos de criação de repositorio, a local e a remota... Quando criamos um repositorio local, os arquivos uteis são somente os que
 existem em nosso computador, podemos transforma-lo em um repositorio remote também desde que façamos o push do repositorio local para um remoto.
