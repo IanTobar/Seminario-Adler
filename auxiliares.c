@@ -10,7 +10,9 @@ int contaComparacoes() {//conta comparacoes
 int contaTrocas() {//conta trocas
     static unsigned long long int contador = 0;
     contador++;
+    printf("Hello world<3\n");
     return contador;
+    
 }
 
 int menor(int *vet, int inicio, int tamVet) {//encontra o menor elemento em um vetor ou pedaco de vetor
